@@ -82,6 +82,7 @@
     /* Style for the slideshow container */
     .slideshow-container {
         max-width: 100%;
+        max-height: 500px; /* Set the maximum height as per your preference */
         position: relative;
         margin: auto;
     }
@@ -89,9 +90,15 @@
     /* Style for individual slides */
     .mySlides {
         display: none;
-        max-width: 100%;
+        width: 100%; /* Set the width to 100% to fill the container */
+        height: 60vh; /* Set the height to the viewport height for full-screen effect */
+        object-fit: cover; /* Ensure the image covers the entire container */
     }
-
+    .mySlides img {
+        width: 100%; /* Set the width to 100% to fill the container */
+        height: 100%; /* Set the height to 100% to fill the container */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
     /* Style for the previous and next buttons */
     .prev, .next {
         cursor: pointer;
@@ -226,13 +233,13 @@ footer {
 <div class="slideshow-container">
     <!-- Slides -->
     <div class="mySlides">
-        <img src="img1.png" alt="Slide 1">
+        <img src="sldshw.png"  alt="Slide 1" >
     </div>
     <div class="mySlides">
-        <img src="img2.png" alt="Slide 2">
+        <img src="sld2.png" alt="Slide 2" >
     </div>
     <div class="mySlides">
-        <img src="img3.png" alt="Slide 3">
+        <img src="sld3.png" alt="Slide 3" >
     </div>
     <!-- Previous and next buttons -->
     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -289,7 +296,6 @@ footer {
 </footer>
 
 <script>
-    // JavaScript for the slideshow
     var slideIndex = 1;
 
     function showSlides(n) {
@@ -315,9 +321,14 @@ footer {
         showSlides(slideIndex += n);
     }
 
-    // Start the slideshow
-    showSlides(slideIndex);
+    function autoSlide() {
+        plusSlides(1); // Automatically advance to the next slide
+    }
 
+    // Start the slideshow and set the interval for automatic sliding
+    showSlides(slideIndex);
+    setInterval(autoSlide, 4000); // Change slides every 4 seconds (adjust as needed)
+</script>
 
 
 
