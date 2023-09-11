@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bot.css">
+    <title>SMOOBOT</title>
+    <script src="script.js"></script>
+    <style>
+        /* Add your CSS styles here */
+        /* You can style the chatbot container, messages area, input field, etc. */
+    </style>
+</head>
+<body>
+
+<!-- Chatbot header -->
+<div id="chatbot-header">
+    <h2>Welcome, IM SMOOBOT </h2>
+    <p></p>
+</div>
+<div class="chatbot-container">
+    <div class="chatbot-messages" id="chatMessages">
+        <!-- Chat messages will be displayed here -->
+        <p><strong>Chatbot:</strong> Hello! How can I help you today?</p>
+    </div>
+    <input type="text" class="chatbot-input" id="userInput" placeholder="Type your message...">
+    <button class="chatbot-send" onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+    function sendMessage() {
+        const userInput = document.getElementById("userInput").value;
+        const chatMessages = document.getElementById("chatMessages");
+
+        // Append user message to chat
+        chatMessages.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+
+        // Simulate a chatbot response (replace with your chatbot logic)
+        setTimeout(() => {
+            const botResponse = getBotResponse(userInput);
+            chatMessages.innerHTML += `<p><strong>Chatbot:</strong> ${botResponse}</p>`;
+        }, 1000);
+
+        // Clear the input field
+        document.getElementById("userInput").value = "";
+    }
+
+    function getBotResponse(userInput) {
+        // You can replace this with your chatbot logic
+        if (userInput.toLowerCase().includes("hello")) {
+            return "Hi there! How can I assist you?";
+        } else if (userInput.toLowerCase().includes("how do i access my academic record")) {
+            return "Hi there! You can access your Academic record on your student potal under" +
+                "the student enquiry section"+ "<a href='https://lifestudent.smu.ac.za/pls/prodi41/w99pkg.mi_login'>" + " click this link to acces th student portal" + "</a>"  ;
+
+        }else if (userInput.toLowerCase().includes("help")) {
+            return "Sure, I can help. What do you need?";
+        } else {
+            return "I'm sorry, I don't understand. Please ask another question.";
+        }
+    }
+</script>
+
+
+
+
+</body>
+</html>
