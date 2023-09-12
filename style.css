@@ -1,4 +1,4 @@
-.chatbot-button {
+.chat-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -15,6 +15,6 @@
 }
 
 /* Style the chatbot button icon (you can replace this with your own icon) */
-.chatbot-icon {
+.chat-icon {
     margin-top: 12px; /* Adjust icon position */
 }
