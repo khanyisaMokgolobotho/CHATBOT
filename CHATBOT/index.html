@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial=1.0">
+    <title>HOME Page</title>
+
+
+</head>
+<style>
+
+    * {
+       padding: 0;
+       margin: 0;
+       text-decoration: none;
+       box-sizing: border-box;
+   }
+
+   nav {
+       background-color: black;
+       height: 60px;
+       width: 100%;
+   }
+
+   label.logo {
+       color: white;
+       font-size: 35px;
+       line-height: 80px;
+       padding: 0 100px;
+       font-weight: bold;
+       position: absolute;
+       top: 0;
+       left: 0;
+   }
+
+   nav ul {
+       float: right;
+       margin-right: 20px;
+   }
+
+   nav ul li {
+       display: inline-block;
+       line-height: 80px;
+       margin: 0 5px;
+       position: relative; /* Added to position dropdown */
+   }
+
+   nav ul li a {
+       color: white;
+       font-size: 17px;
+       text-transform: uppercase;
+       padding: 7px 13px;
+       border-radius: 3px;
+   }
+
+   /* Style for dropdown */
+   .dropdown .dropOption {
+       display: none;
+       position: absolute;
+       background:  white;
+       /*margin-top: 15px;*/
+       margin-left: 0; /* Adjust as needed */
+   }
+
+   /* Show the dropdown when hovering over the menu item */
+   .dropdown:hover .dropOption {
+       display:block;
+   }
+
+   a.active, a:hover {
+       background: #ff6900;
+       //transform: .5s;
+    }
+    nav ul li:last-child {
+    margin-right: 0;
+}
+
+
+/* Your existing styles for navigation bar and footer here */
+
+    /* Style for the slideshow container */
+    .slideshow-container {
+        max-width: 100%;
+        max-height: 500px; /* Set the maximum height as per your preference */
+        position: relative;
+        margin: auto;
+    }
+
+    /* Style for individual slides */
+    .mySlides {
+        display: none;
+        width: 100%; /* Set the width to 100% to fill the container */
+        height: 60vh; /* Set the height to the viewport height for full-screen effect */
+        object-fit: cover; /* Ensure the image covers the entire container */
+    }
+    .mySlides img {
+        width: 100%; /* Set the width to 100% to fill the container */
+        height: 100%; /* Set the height to 100% to fill the container */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+    /* Style for the previous and next buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px; /* Adjust for vertical centering */
+        padding: 16px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    /* Position the previous button on the left side */
+    .prev {
+        left: 0;
+    }
+
+    /* Position the next button on the right side */
+    .next {
+        right: 0;
+    }
+
+
+
+
+    /* Add styles for the footer */
+
+/* Footer container */
+footer {
+    background-color: #333; /* Change the background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Add padding top and bottom for spacing */
+    text-align: center;
+}
+
+/* Footer navigation menu */
+#et-footer-nav {
+    margin-top: 20px; /* Add space between content and footer menu */
+}
+
+#menu-main-footer-menu {
+    list-style-type: none;
+}
+
+#menu-main-footer-menu li {
+    display: inline-block;
+    margin-right: 20px; /* Add space between footer menu items */
+}
+
+#menu-main-footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px; /* Adjust the font size */
+}
+
+/* Social icons in the footer */
+.et-social-icons {
+    margin-top: 20px; /* Add space between footer menu and social icons */
+}
+
+.et-social-icon a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Adjust the font size */
+    margin-right: 15px; /* Add space between social icons */
+}
+
+/* Footer info text */
+#footer-info {
+    margin-top: 20px; /* Add space between social icons and info text */
+    font-size: 12px; /* Adjust the font size */
+}
+
+/* Footer copyright text */
+#footer-bottom {
+    margin-top: 20px; /* Add space between info text and copyright text */
+}
+
+/* Style for copyright text and links */
+#footer-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+</style>
+
+<body>
+<nav>
+    <label class="logo">SMU</label>
+    <img src="smu.png" width="73" height="60" alt="SMU" id="logo" data-height-percentage="75" >
+    <ul>
+        <li class="dropdown"><a href="#">HOME</a>
+            <div class="dropOption">
+
+            </div>
+        </li>
+        <li class="dropdown"><a href="#">EVENTS</a>
+            <div class="dropOption">
+
+            </div>
+        </li>
+        <li class="dropdown"><a href="#">SMU-FAQS</a>
+            <div class="dropOption">
+
+            </div>
+        </li>
+        <li class="dropdown"><a href="#">E-LEARNING RESOURCES</a>
+            <div class="dropOption">
+
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">GALLERY</a>
+        <div class="dropOption">
+        </div>
+        </li>
+
+                        <li class="dropdown">
+                            <a href="#">CONTACTS</a>
+                            <div class="dropOption">
+                            </div>
+                        </li>
+    </ul>
+
+</nav>
+
+
+<div class="slideshow-container">
+    <!-- Slides -->
+    <div class="mySlides">
+        <img src="sldshw.png"  alt="Slide 1" >
+    </div>
+    <div class="mySlides">
+        <img src="sld2.png" alt="Slide 2" >
+    </div>
+    <div class="mySlides">
+        <img src="sld3.png" alt="Slide 3" >
+    </div>
+    <!-- Previous and next buttons -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+
+<button class="chatbot-button" id="chatbot-button">
+    <span class="chatbot-icon"><a href="chatbot.html "> 🤖</a></span>
+</button>
+
+
+
+
+
+
+
+<!-- Your content here -->
+<footer id="main-footer">
+
+
+
+    <div id="et-footer-nav">
+        <div class="container">
+            <ul id="menu-main-footer-menu" class="bottom-nav"><li id="menu-item-256047" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256047"><a href="">Students</a></li>
+                <li id="menu-item-256048" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256048"><a href=" ">Library</a></li>
+                <li id="menu-item-256049" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256049"><a href=" ">Schools</a></li>
+                <li id="menu-item-256050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256050"><a href=" ">News &amp; Publications</a></li>
+                <li id="menu-item-256051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256051"><a href=" ">Alumni and Convocation</a></li>
+                <li id="menu-item-256052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256052"><a href=" ">Accolades and Achievements</a></li>
+                <li id="menu-item-256054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256054"><a href=" ">SMU Mail</a></li>
+                <li id="menu-item-256053" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256053"><a href=" ">Intranet</a></li>
+            </ul>					</div>
+    </div>
+
+
+    <div id="footer-bottom">
+        <div class="container clearfix">
+            <ul class="et-social-icons">
+
+                <li class="et-social-icon et-social-facebook">
+                    <a href="#" class="icon">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="et-social-icon et-social-twitter">
+                    <a href="#" class="icon">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+
+            </ul><div id="footer-info">© <a href="https://www.smu.ac.za/" target="_blank" rel="noopener">Sefako Makgatho Health Sciences University</a> | 2021-2023. All rights reserved. <a href="#" target="_blank" rel="noopener">Sitemap</a> | <a href="https://www.smu.ac.za/privacy-policy/" target="_blank" rel="noopener">Terms and Conditions</a></div>					</div>
+    </div>
+</footer>
+
+<script>
+    var slideIndex = 1;
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function autoSlide() {
+        plusSlides(1); // Automatically advance to the next slide
+    }
+
+    // Start the slideshow and set the interval for automatic sliding
+    showSlides(slideIndex);
+    setInterval(autoSlide, 4000); // Change slides every 4 seconds (adjust as needed)
+</script>
+
+
+
+</script>
+</body>
+</html>

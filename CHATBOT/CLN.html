@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial=1.0">
+    <title>Landing Page</title>
+</head>
+<style>
+    /* Your existing styles */
+
+    /* Add styles for chatbot */
+    #chatbot-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: none; /* Initially hidden, you can show it with JavaScript */
+    }
+
+    #chatbot-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 5px 5px 0 0;
+    }
+
+    #chatbot-messages {
+        padding: 10px;
+        height: 300px;
+        overflow-y: auto;
+    }
+
+    #chatbot-input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-top: 1px solid #ccc;
+    }
+
+    #chatbot-input:focus {
+        border-top: 1px solid #007bff;
+    }
+
+    #chatbot-send-button {
+        width: 100%;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        cursor: pointer;
+    }
+</style>
+<body>
+<!-- Your existing HTML content -->
+
+<!-- Chatbot interface -->
+<div id="chatbot-container">
+    <div id="chatbot-header">Chat with MoUJi</div>
+    <div id="chatbot-messages">
+        <!-- Chat messages will be displayed here -->
+    </div>
+    <input type="text" id="chatbot-input" placeholder="Type your message...">
+    <button id="chatbot-send-button">Send</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+.body {
+    font-family:"Arial Black";
+
+
+}
+
+
+.chat-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ff6900;
+    border-radius: 10px;
+    background-color: #ff6900; /* Optional background color */
+    box-shadow: #ff6900 /* Optional box shadow */
+}
+chat-header {
+    background-color: #ff6900; /* Background color for the header */
+    color: #fff; /* Font color for the header */
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.chat-container.open {
+    /* Visible when the 'open' class is added */
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* Add more styles for the open state as needed */
+}
+
+.chat-area {
+    background-color: #ffffff;
+
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-top: 1px solid #ff6900;
+    outline: none;
+}

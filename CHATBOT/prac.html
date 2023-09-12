@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="LandingPage.css">
+    <meta name="viewport" content="width=device-width, initial=1.0">
+    <title>Landing Page</title>
+
+
+</head>
+<style>
+
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      box-sizing: border-box;
+  }
+
+  nav {
+      background-color: rgb(20, 223, 102);
+      height: 60px;
+      width: 100%;
+  }
+
+  label.logo {
+      color: white;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+  }
+
+  nav ul {
+      float: right;
+      margin-right: 20px;
+  }
+
+  nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+      position: relative; /* Added to position dropdown */
+  }
+
+  nav ul li a {
+      color: white;
+      font-size: 17px;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 3px;
+  }
+
+  /* Style for dropdown */
+  .dropdown .dropOption {
+      display: none;
+      position: absolute;
+      background:  white;
+      /*margin-top: 15px;*/
+      margin-left: 0; /* Adjust as needed */
+  }
+
+  /* Show the dropdown when hovering over the menu item */
+  .dropdown:hover .dropOption {
+      display:block;
+  }
+
+  a.active, a:hover {
+      background: rgba(90, 200, 120, 0.9);
+      transform: .5s;
+  }
+
+
+
+</style>
+
+<body>
+<nav>
+    <label class="logo">SMU</label>
+    <img src="smu.png" width="73" height="60" alt="SMU" id="logo" data-height-percentage="75" >
+    <ul>
+        <li class="dropdown"><a href="#">HOME</a>
+            <div class="dropOption">
+
+            </div>
+        </li>
+        <li class="dropdown"><a href="#">EVENTS</a>
+            <div class="dropOption">
+
+            </div>
+        </li>
+        <li class="dropdown"><a href="#">SMU-FAQS</a>
+            <div class="dropOption">
+
+            </div>
+        </li>
+        <li class="dropdown"><a href="#">E-LEARNING RESOURCES</a>
+            <div class="dropOption">
+
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">GALLERY</a>
+            <div class="dropOption">
+                <li class="dropdown">
+                    <a href="#">PSYCHOLOGICAL SUPPORT</a>
+                    <div class="dropOption">
+
+                        <li class="dropdown">
+                            <a href="#">CONTACTS</a>
+                            <div class="dropOption">
+                            </div>
+</nav>
+<!-- Your content here -->
+<footer id="main-footer">
+
+
+
+    <div id="et-footer-nav">
+        <div class="container">
+            <ul id="menu-main-footer-menu" class="bottom-nav"><li id="menu-item-256047" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256047"><a href="https://www.smu.ac.za/students/">Students</a></li>
+                <li id="menu-item-256048" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256048"><a href="https://www.smu.ac.za/students/library/">Library</a></li>
+                <li id="menu-item-256049" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256049"><a href="https://www.smu.ac.za/schools/">Schools</a></li>
+                <li id="menu-item-256050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256050"><a href="https://www.smu.ac.za/news-and-publications/">News &amp; Publications</a></li>
+                <li id="menu-item-256051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256051"><a href="https://www.smu.ac.za/alumni-and-convocation/">Alumni and Convocation</a></li>
+                <li id="menu-item-256052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256052"><a href="https://www.smu.ac.za/accolades-and-achievement/">Accolades and Achievements</a></li>
+                <li id="menu-item-256054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256054"><a href="https://mail.smu.ac.za/">SMU Mail</a></li>
+                <li id="menu-item-256053" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256053"><a href="https://smuonline.sharepoint.com/sites/SMUIntranet">Intranet</a></li>
+            </ul>					</div>
+    </div>
+
+
+    <div id="footer-bottom">
+        <div class="container clearfix">
+            <ul class="et-social-icons">
+
+                <li class="et-social-icon et-social-facebook">
+                    <a href="#" class="icon">
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="et-social-icon et-social-twitter">
+                    <a href="#" class="icon">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+
+            </ul><div id="footer-info">© <a href="https://www.smu.ac.za/" target="_blank" rel="noopener">Sefako Makgatho Health Sciences University</a> | 2021-2023. All rights reserved. <a href="#" target="_blank" rel="noopener">Sitemap</a> | <a href="https://www.smu.ac.za/privacy-policy/" target="_blank" rel="noopener">Terms and Conditions</a></div>					</div>
+    </div>
+</footer>
+
+</body>
+</html>
