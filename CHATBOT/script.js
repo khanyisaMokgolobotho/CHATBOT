@@ -162,14 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <li>Pharmacy</li>
         <li>Science and Technology</li>
     </ul>`);
-        } else if (userMessage === "health care sciences") {
-            const departmentContacts = contacts[userMessage];
-            let message = `Here are the contacts for the ${userMessage} department:<br>`;
-            message += `Title: ${departmentContacts.Title}<br>`;
-            message += `Name: ${departmentContacts.Name}<br>`;
-            message += `Email: ${departmentContacts.Email}<br>`;
-            botReply(message);
-        }
+        } 
     }
 
     function botReply(message) {
